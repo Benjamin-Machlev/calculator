@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="calculator.css"
+    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <div id="main">
+      <input id="screen"  class="w3-round w3-white" />
+      <table>
+        <tr>
+          <td>
+            <input type="button"
+              onclick="clear1()"
+              class="w3-button w3-circle w3-orange"
+              class="num"
+              value="C"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+              onclick="backSpace()"
+              class="w3-button w3-circle w3-blue-gray"
+              class="num"
+              value="⇦"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-blue"
+              class="num"
+              value="/"
+            >
+              
+          </input>
+          </td>
+          <td>
+            
+              <input type="button"
+                onclick="calc(this.value)"
+                class="w3-button w3-circle w3-blue"
+                class="num"
+                value="*"
+              >
+                
+              </input>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-black"
+              class="num"
+              value="7"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-black"
+              class="num"
+              value="8"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-black"
+            class="num"
+            value="9"
+          >
+            
+          </input>
+          </td>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-blue"
+              class="num"
+              value="-"
+            >
+              
+            </input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-black"
+              class="num"
+              value="4"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+              onclick="calc(this.value)"
+              class="w3-button w3-circle w3-black"
+              class="num"
+              value="5"
+            >
+              
+            </input>
+          </td>
+          <td>
+            <input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-black"
+            class="num"
+            value="6"
+          >
+            
+          </input>
+          </td>
+          <td>
+            <input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-blue"
+            class="num"
+            value="+"
+          >
+            
+          </input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-black"
+            class="num"
+            value="1"
+          >
+            
+          </input>
+          </td>
+          <td>
+            <input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-black"
+            class="num"
+            value="2"
+          >
+            
+          </input>
+          </td>
+          <td><input type="button"
+            onclick="calc(this.value)"
+            class="w3-button w3-circle w3-black"
+            class="num"
+            value="3"
+          >
+            
+          </input></td>
+          <td rowspan="2">
+            <input type="button"
+            onclick="equal()"
+            class="w3-button w3-white w3-round-xxlarge"
+            class="num"
+            value="="
+            id="equal"
+          >
+            
+          </input>
+          </td>
+        
+        </tr>
+        <tr>
+        <td colspan="2"><input type="button"
+          onclick="calc(this.value)"
+          class="w3-button w3-black w3-round-xxlarge"
+          class="num"
+          value="0"
+          id="zero"
+        >
+          
+        </input></td>
+        <td colspan="2">
+          <input type="button"
+          onclick="calc(this.value)"
+          class="w3-button w3-circle w3-black"
+          class="num"
+          value="."
+        >
+          
+        </input>
+        </td>
+      </tr>
+
+      </table>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
